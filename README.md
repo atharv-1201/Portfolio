@@ -1,4 +1,4 @@
-# Yash Srivastava | Portfolio
+# Atharv Dwivedi | Portfolio
 
 This is a modern, premium portfolio website built with [Next.js](https://nextjs.org), [Tailwind CSS](https://tailwindcss.com), and [Framer Motion](https://www.framer.com/motion/).
 
