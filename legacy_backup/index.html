@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yash Srivastava | Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato&display=swap">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+  :root {
+    --primary: #6a4c93;
+    --dark: #1c1c1c;
+    --light: #fdfdfd;
+    --glass: rgba(255, 255, 255, 0.1);
+    --border: rgba(255, 255, 255, 0.25);
+    --shadow: rgba(0, 0, 0, 0.1);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #fdfdfd, #f3f3f3);
+    color: #333;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #2b2b2b;
+  }
+
+  header {
+    background: var(--dark);
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-logo {
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+  }
+
+  .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .nav-link:hover {
+    color: var(--primary);
+  }
+
+  .section {
+    padding: 5rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .home-title {
+    font-size: 2.8rem;
+    margin: 1rem 0;
+    color: var(--primary);
+  }
+
+  .button {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px var(--shadow);
+  }
+
+  .button:hover {
+    background-color: #4e3370;
+    transform: translateY(-2px);
+  }
+
+  .skills-container, .project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .project-img {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+
+  .project-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+
+  .project-title {
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+    color: #222;
+  }
+
+  footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+    font-size: 0.95rem;
+  }
+
+  .footer-icon {
+    margin: 0 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .footer-icon:hover {
+    transform: scale(1.2);
+    color: var(--primary);
+  }
+
+  @media (max-width: 600px) {
+    .nav-list {
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    #home {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .home-title {
+      font-size: 2.2rem;
+    }
+
+    .project-img {
+      padding: 1rem;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header data-aos="fade-down">
+    <nav>
+      <a href="#" class="nav-logo">Yash Srivastava</a>
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#iot-projects">IoT Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HOME SECTION ===== -->
+  <section class="section" id="home" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+    <div style="flex: 1; min-width: 250px;" data-aos="fade-right">
+      <h1 class="home-title">Hello, I’m <span style="color: #6a4c93;">Yash Srivastava</span></h1>
+      <p>Full Stack Developer | IoT Engineer | Problem Solver</p>
+      <a href="photos/yash resume final copy.pdf" class="button" target="_blank">Download Resume</a>
+    </div>
+    <div style="flex: 1; min-width: 250px; text-align: center;" data-aos="fade-left">
+      <img src="photos/PHOTO-2025-05-31-14-50-03.jpg" alt="Profile Photo" style="max-width: 50%; border-radius: 15%;" />
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section" id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      I am a second-year B.Tech student in Computer Science and Engineering with a strong foundation in
+      software development and data structures. Through my internship at Code Tech Solution and
+      participation in hackathons, I have honed my skills in full-stack development, problem-solving, and
+      team collaboration. With a CGPA of 8.24 and hands-on experience in Python, Java, and full-stack
+      projects, I am eager to contribute and further develop my technical expertise in a dynamic environment.
+    </p>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section" id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div data-aos="fade-up" data-aos-delay="100">Python</div>
+      <div data-aos="fade-up" data-aos-delay="150">Java</div>
+      <div data-aos="fade-up" data-aos-delay="200">C/C++</div>
+      <div data-aos="fade-up" data-aos-delay="250">SQL</div>
+      <div data-aos="fade-up" data-aos-delay="300">Django</div>
+      <div data-aos="fade-up" data-aos-delay="350">Flask</div>
+      <div data-aos="fade-up" data-aos-delay="400">React</div>
+      <div data-aos="fade-up" data-aos-delay="450">HTML</div>
+      <div data-aos="fade-up" data-aos-delay="500">CSS</div>
+      <div data-aos="fade-up" data-aos-delay="550">JavaScript</div>
+    </div>
+  </section>
+
+  <!-- ===== INTERNSHIP SECTION ===== -->
+<section class="section" id="internship" data-aos="fade-up">
+  <h2>Internship Experience</h2>
+  <div class="project-container">
+
+    <div class="project-img" data-aos="zoom-in">
+      <h3 class="project-title">Code Tech | Software Development Intern</h3>
+      <p>Jan 2025 – Mar 2025</p>
+      <p>Developed full-stack applications using HTML, CSS, JavaScript, and Socket.IO. Gained practical experience in web development and real-time communication systems.</p>
+      <a href="photos/Screenshot 2025-06-27 at 12.26.26 AM.png" class="button" target="_blank">View Letter</a>
+    </div>
+
+    <div class="project-img" data-aos="zoom-in" data-aos-delay="100">
+      <h3 class="project-title">SheSafe | Research & Development Intern</h3>
+      <p>June 2025 – July 2025</p>
+      <p>Selected for a mission-driven IoT-focused internship at a safety-tech startup. Worked on hardware-software integration and contributed to R&D of smart safety solutions.</p>
+      <a href="photos/Screenshot 2025-06-27 at 12.22.34 AM.png" class="button" target="_blank">View Letter</a>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- ===== SOFTWARE PROJECTS ===== -->
+  <section class="section" id="projects" data-aos="fade-up">
+    <h2>Software Projects</h2>
+    <div class="project-container">
+
+
+      <div class="project-img" data-aos="zoom-in">
+        <h3 class="project-title">BudgetMate</h3>
+        <p>BudgetMate is a personal income and expense tracker web application built with React and Vite.</p>
+        <a href="https://github.com/yashsrivastava1408/budgetmate" class="button" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-img" data-aos="zoom-in">
+        <h3 class="project-title">Smart Shop</h3>
+        <p>Developed an e-commerce platform with user authentication, product listings, and cart functionality.</p>
+        <a href="https://github.com/yashsrivastava1408/SMART-SHOP" class="button" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-img" data-aos="zoom-in" data-aos-delay="100">
+        <h3 class="project-title">Fish Catch System</h3>
+        <p>An IoT-powered data logging and analytics system for fish catch prediction using geolocation and historical data.</p>
+        <a href="https://github.com/yashsrivastava1408/FISH-CATCH-SYSTEM" class="button" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-img" data-aos="zoom-in" data-aos-delay="200">
+        <h3 class="project-title">ChatBot</h3>
+        <p>Created a full-stack chatbot application demonstrating RESTful API integration and CRUD operations.</p>
+        <a href="https://github.com/yashsrivastava1408/CHATBOT" class="button" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-img" data-aos="zoom-in" data-aos-delay="300">
+        <h3 class="project-title">Atmos</h3>
+        <p>Designed a responsive single-page application focused on modern UI/UX principles and client-side scripting.</p>
+        <a href="https://github.com/yashsrivastava1408/ATMOS" class="button" target="_blank">GitHub</a>
+      </div>
+
+
+      <div class="project-img" data-aos="zoom-in" data-aos-delay="300">
+        <h3 class="project-title">Volt Vision</h3>
+        <p>VOLT VISION is a real-time voltage monitoring system that uses C# for data processing and a Flask web interface for live data visualization and analytics.</p>
+        <a href="https://github.com/yashsrivastava1408/VOLT-VISION" class="button" target="_blank">GitHub</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== IOT PROJECTS ===== -->
+  <section class="section" id="iot-projects" data-aos="fade-up">
+    <h2>IoT Projects</h2>
+    <div class="project-container">
+
+      <div class="project-img" data-aos="flip-left">
+        <h3 class="project-title">Smart Car Parking System</h3>
+        <p>Engineered an IoT-enabled parking system with real-time slot detection and automatic license plate recognition.</p>
+        <a href="https://github.com/yashsrivastava1408/SMART-CAR-PARKING-SYSTEM" class="button" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-img" data-aos="flip-left" data-aos-delay="100">
+        <h3 class="project-title">Dual-Axis Sun Tracking Solar Panel</h3>
+        <p>Developed a dual-axis tracking system to optimize solar panel energy capture using servo motors and sensors.</p>
+        <a href="https://github.com/yashsrivastava1408/home-automation" class="button" target="_blank">GitHub</a>
+      </div>
+
+    </div>
+  </section>
+  <!-- ===== CERTIFICATES SECTION ===== -->
+<section class="section" id="certificates">
+  <h2>Certificates</h2>
+  <div class="project-container">
+
+    <div class="project-img">
+      <h3 class="project-title">TECHKNOW 2023-2024</h3>
+      <p>1ST PRICE FOR MAKING “MEDICINE DELIEVERY ROBOT”.</p>
+      <a href="photos/Screenshot 2025-06-26 at 11.48.52 PM.png" class="button" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="project-img">
+      <h3 class="project-title">NPTEL ONLINE CERTIFICATION</h3>
+      <p>PROGRAMMING IN JAVA</p>
+      <a href="photos/Screenshot 2025-06-21 at 10.55.42 PM.png" class="button" target="_blank">View Certificate</a>
+    </div>
+
+
+   <div class="project-img">
+      <h3 class="project-title">Oracle Certified Foundations Associate</h3>
+      <p>Certificate of Recognition</p>
+      <a href="photos/Screenshot 2025-06-21 at 10.53.31 PM.png" class="button" target="_blank">View Certificate</a>
+      
+  </div>
+
+    <div class="project-img">
+      <h3 class="project-title">Electronic Arts</h3>
+      <p>Software Engineering Job Simulation</p>
+      <a href="photos/Screenshot 2025-06-26 at 11.56.28 PM.png" class="button" target="_blank">View Certificate</a>
+      
+  </div>
+
+   <div class="project-img">
+      <h3 class="project-title">WEEKLY CODING CHALLENGE</h3>
+      <p>Certificate of Excellence</p>
+      <a href="photos/Screenshot 2025-06-26 at 11.56.28 PM.png" class="button" target="_blank">View Certificate</a>
+      
+  </div>
+
+   <div class="project-img">
+      <h3 class="project-title">CreaTech 2024</h3>
+      <p>Participation Certificate</p>
+      <a href="photos/Screenshot 2025-06-27 at 12.15.44 AM.png" class="button" target="_blank">View Certificate</a>
+      
+  </div>
+
+</section>
+
+
+  <!-- ===== CONTACT ===== -->
+  <footer class="section" id="contact" data-aos="fade-up">
+    <h2>Get in Touch</h2>
+    <p><strong>Email:</strong> yashsrivastava1408@gmail.com</p>
+    <p><strong>Phone:</strong> +91-6394026578</p>
+    <div>
+      <a href="https://www.linkedin.com/in/yash-srivastava-45779531a" class="footer-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://github.com/yashsrivastava1408" class="footer-icon" target="_blank"><i class='bx bxl-github'></i></a>
+    </div>
+    <p>&copy; 2025 Yash Srivastava. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
