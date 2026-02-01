@@ -55,7 +55,7 @@ export default function About() {
                         </div>
 
                         <p className="text-gray-600 text-sm leading-relaxed px-4">
-                            Full Stack Developer &<br />AI Engineer
+                            Full Stack Developer<br />AI and Data Engineer<br /> FinTech and Web3 Enthusiast<br /> Quantum Finance
                         </p>
                     </div>
 
