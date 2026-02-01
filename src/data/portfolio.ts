@@ -3,12 +3,12 @@ import { Github, Linkedin } from "lucide-react";
 
 export const portfolioData = {
   personal: {
-    name: "Yash Srivastava",
-    title: "Full Stack Developer | DevSecOps Enthusiast",
+    name: "Atharv Dwivedi",
+    title: "Data Engineer | FinTech Enthusiast",
     description:
       "Third-year B.Tech Computer Science student who builds systems end-to-end — from backend code to production deployments. Currently a DevOps Intern working on CI/CD pipelines, containerization, and cloud-native workflows using GitHub Actions, Jenkins, Docker, Kubernetes, and Linux. My core strengths include Java, Python, backend development, and DevOps fundamentals. Actively expanding skills in cloud computing, automation, and scalable system design. Seeking internship or early-career opportunities in Software Engineering, Platform, Cloud, or DevOps roles.",
-    email: "yashsrivastava1408@gmail.com",
-    phone: "+91-6394026578",
+    email: "atharvdwivedi2006@gmail.com",
+    phone: "+91-9930508007",
     resume: "/resume.png",
     social: [
       {

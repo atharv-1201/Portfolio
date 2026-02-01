@@ -24,7 +24,7 @@ export default function SplashScreen({ finishLoading }: { finishLoading: () => v
             <div className="absolute w-[500px] h-[500px] bg-primary/20 rounded-full blur-[100px] pointer-events-none opacity-40" />
 
             <div className="relative z-10 flex items-center gap-4 md:gap-8 overflow-hidden">
-                {/* Left Text: YASH */}
+                {/* Left Text: ATHARV */}
                 <motion.div
                     initial={{ x: "-100vw", opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
@@ -39,11 +39,11 @@ export default function SplashScreen({ finishLoading }: { finishLoading: () => v
                     className="flex items-center"
                 >
                     <span className="text-5xl md:text-8xl font-black font-heading text-white tracking-tighter">
-                        YASH
+                        ATHARV
                     </span>
                 </motion.div>
 
-                {/* Right Text: SRIVASTAVA */}
+                {/* Right Text: DWIVEDI */}
                 <motion.div
                     initial={{ x: "100vw", opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
@@ -59,7 +59,7 @@ export default function SplashScreen({ finishLoading }: { finishLoading: () => v
                     className="flex items-center"
                 >
                     <span className="text-5xl md:text-8xl font-black font-heading text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-white tracking-tighter">
-                        SRIVASTAVA
+                        DWIVEDI
                     </span>
                     <motion.span
                         initial={{ opacity: 0, scale: 0 }}

@@ -29,7 +29,7 @@ export default function About() {
                         <div className="relative w-full aspect-[4/5] rounded-[30px] overflow-hidden mb-8 bg-[#1a1a1a] flex items-center justify-center">
                             <Image
                                 src="/yash.png"
-                                alt="Yash Srivastava"
+                                alt="ATHARV DWIVEDI"
                                 fill
                                 className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
                                 onError={(e) => {
@@ -39,7 +39,7 @@ export default function About() {
                             />
                             {/* Fallback Initials (Visible if image hidden) */}
                             <div className="absolute inset-0 flex items-center justify-center bg-gray-900 text-white font-black text-6xl opacity-0 fallback-opacity">
-                                YS
+                                AD
                             </div>
                             <div className="absolute inset-0 bg-orange-500/10 mix-blend-overlay pointer-events-none" />
                         </div>
@@ -55,7 +55,7 @@ export default function About() {
                         </div>
 
                         <p className="text-gray-600 text-sm leading-relaxed px-4">
-                            Full Stack Developer &<br />DevSecOps Enthusiast
+                            Full Stack Developer &<br />AI Engineer
                         </p>
                     </div>
 
@@ -136,7 +136,7 @@ export default function About() {
                         className="px-8 py-4 bg-[#ccff00] text-black rounded-xl font-bold hover:bg-[#b3e600] transition-colors shadow-lg shadow-[#ccff00]/20 flex items-center gap-2"
                     >
                         <Download className="w-5 h-5" />
-                        Download Resume
+                        Download My Resume
                     </a>
                 </div>
             </motion.div>
